@@ -1,10 +1,18 @@
+<form action="" method="get">
+    <label style="display:block;" for=" num1"> Digite sua altura ▼</label>
+    <input name="num1" type="text">
+
+    <button style="padding: 10;" type="submit">Enviar</button>
+</form>
+
+
 <?php
 
-    $altura = 1.93;
-    $PesIdealH = (72 * $altura) - 58;
-    $PesIdealM = (62.1 * $altura) - 44.7;
+$altura = $_GET["num1"];
+$PesIdealH = (72 * $altura) - 58;
+$PesIdealM = (62.1 * $altura) - 44.7;
 
-    echo "Seu peso ideal é: " . $PesIdealH . "kg para homem de altura igual a " . $altura . " cm<br>";
-    echo "Seu peso ideal é: " . $PesIdealM . "kg para mulher de altura igual a " . $altura . " cm<br>";
+echo "Seu peso ideal é: " . $PesIdealH . "kg para homem <br>";
+echo "Seu peso ideal é: " . $PesIdealM . "kg para mulher ";
 
 ?>
