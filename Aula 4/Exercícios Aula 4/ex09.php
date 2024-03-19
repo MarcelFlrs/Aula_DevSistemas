@@ -20,7 +20,7 @@ $vetor = [$num1, $num2, $num3];
 
 do {
     $troca = false;
-    for ($i = 0; $i < 2; $i++) {
+    for ($i = 0; $i < count($vetor)-1; $i++) {
         if ($vetor[$i] < $vetor[$i + 1]) {
             $aux = $vetor[$i + 1];
             $vetor[$i + 1] = $vetor[$i];
@@ -30,8 +30,8 @@ do {
     }
 } while ($troca);
 
-for ($i = 0; $i < 3; $i++) {
-    echo " |  " . $vetor[$i] . "  | ";;
+for ($i = 0; $i < count($vetor); $i++) {
+    echo " |  " . $vetor[$i] . "  | ";
 }
 
 
