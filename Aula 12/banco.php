@@ -1,7 +1,7 @@
 <pre>
 <?php 
 
-    $banco = new mysqli("localhost", "root", "", "seunomedabasefeliz");
+    $banco = new mysqli("localhost", "root", "", "bancodobrasil");
     
     // echo var_dump($banco);
     
