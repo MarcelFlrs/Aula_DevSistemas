@@ -1,11 +1,11 @@
 <pre>
-<?php 
+<?php
 
-    $banco = new mysqli("localhost", "root", "", "bancodobrasil");
-    
-    // echo var_dump($banco);
-    
-    /*echo print_r($banco);
+$banco = new mysqli("localhost:3307", "root", "", "bancodobrasil");
+
+// echo var_dump($banco);
+
+/*echo print_r($banco);
 
     echo "<br>----------------------------------<br>";
     $busca = $banco->query("SELECT * FROM usuarios");
